@@ -59,9 +59,9 @@
 		font-weight: 500;
 		line-height: 24px;
 		text-transform: uppercase;
-		color: #ffffff;
-		background-color: #EF4D9C;
-		border: 1px solid #EF4D9C;
+		color: var(--color-white);
+		background-color: var(--color-crayola);
+		border: 1px solid var(--color-crayola);
 		border-radius: 4px;
 	}
 
@@ -84,7 +84,7 @@
 
 		&.--active {
 			background: url("./../../img/main/counter-btn-polygon.svg");
-			color: #ffffff;
+			color: var(--color-white);
 		}
 
 	}

@@ -135,37 +135,37 @@
 	}
 
 	&--probiotics {
-		background: #A3E07E;
+		background: var(--color-green);
 	}
 
 	&--salts {
-		background: #FDED84;
+		background: var(--color-yellow);
 	}
 
 	&--complex {
-		background: #FF9CCA;
+		background: var(--color-rose);
 	}
 
 	&--water {
-		background: #FDB96B;
+		background: var(--color-orange);
 	}
 
 	//mod-class-inverse
 	&:hover {
 		&.catalog__card-wrapper--probiotics {
-			background: #71BD44;
+			background: var(--color-green-inverse);
 		}
 
 		&.catalog__card-wrapper--salts {
-			background: #FFDD00;
+			background: var(--color-yellow-inverse);
 		}
 
 		&.catalog__card-wrapper--complex {
-			background: #F669B8;
+			background: var(--color-rose-inverse);
 		}
 
 		&.catalog__card-wrapper--water {
-			background: #F9931F;
+			background: var(--color-orange-inverse);
 		}
 
 		& .catalog__card-image--probiotics {
@@ -242,7 +242,7 @@
 		}
 
 		& .catalog__card-btn {
-			color: #ffffff;
+			color: var(--color-white);
 			background-color: var(--text-color);
 			border: 1px solid var(--text-color);
 			border-radius: 4px;

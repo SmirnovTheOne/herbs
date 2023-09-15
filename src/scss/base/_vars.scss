@@ -27,18 +27,35 @@
 	--font-accent: 'Playfair Display',
 	serif;
 
-	--page-bg: #fff;
-	--accent: #ac182c;
-
 	--laptop-size: 1199px;
 	--tablet-size: 959px;
 	--mobile-size: 599px;
 
 	//color
-	--text-color: #333333;
-}
 
-// UI-animation
-.--none {
-	display: none;
+
+	--color-white: #ffffff;
+
+	--text-color: #333333;
+	--color-gray: #565658;
+
+
+	--color-green: #A3E07E;
+	--color-green-inverse: #71BD44;
+
+	--color-yellow: #FDED84;
+	--color-yellow-inverse: #FFDD00;
+
+	--color-rose: #FF9CCA;
+	--color-rose-inverse:#F669B8;
+
+	--color-crayola: #EF4D9C;
+
+	--color-orange: #FDB96B;
+	--color-orange-inverse: #F9931F;
+
+	--color-blue: #96E9F9;
+
+	--color-blue-inverse: #50DAF5;
+
 }

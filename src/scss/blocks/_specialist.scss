@@ -220,32 +220,32 @@
 	}
 
 	&--blue {
-		background: #96E9F9;
+		background: var(--color-blue);
 	}
 
 	&--green {
-		background: #A3E07E;
+		background: var(--color-green);
 	}
 
 	&--yellow {
-		background: #FDED84;
+		background: var(--color-yellow);
 	}
 
 	&.inverse {
 		&.specialist__card-wrap--blue {
-			background: #50DAF5;
+			background: var(--color-blue-inverse);
 		}
 
 		&.specialist__card-wrap--green {
-			background: #71BD44;
+			background: var(--color-green-inverse);
 		}
 
 		&.specialist__card-wrap--yellow {
-			background: #FFDD00;
+			background: var(--color-yellow-inverse);
 		}
 
 		& .specialist__card-btn {
-			color: #ffffff;
+			color: var(--color-white);
 			background-color: var(--text-color);
 			border: 1px solid var(--text-color);
 			border-radius: 4px;

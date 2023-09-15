@@ -163,7 +163,7 @@
 
 	&:hover {
 		.news__card-title {
-			color: #EF4D9C;
+			color: var(--color-crayola);
 		}
 
 		.news__card-img img {
@@ -233,7 +233,7 @@
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 24px;
-	color: #71BD44;
+	color: var(--color-green-inverse);
 
 	@media (max-width: 1440px) {
 		font-weight: 500;
