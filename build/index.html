@@ -20,25 +20,25 @@
       <img src="./../../img/logo.svg" class="header-logo" />
       <ul class="header-nav">
         <li class="header-nav__item">
-          <a class="header-nav__link" href="#">Каталог</a>
+          <a class="header-nav__link" href ="javascript:void(0);">Каталог</a>
         </li>
         <li class="header-nav__item">
-          <a class="header-nav__link" href="#">Это интересно</a>
+          <a class="header-nav__link" href ="javascript:void(0);">Это интересно</a>
         </li>
         <li class="header-nav__item">
-          <a class="header-nav__link" href="#">Новости</a>
+          <a class="header-nav__link" href ="javascript:void(0);">Новости</a>
         </li>
         <li class="header-nav__item">
-          <a class="header-nav__link" href="#">Вопрос-ответ</a>
+          <a class="header-nav__link" href ="javascript:void(0);">Вопрос-ответ</a>
         </li>
         <li class="header-nav__item">
-          <a class="header-nav__link" href="#">Специалистам</a>
+          <a class="header-nav__link" href ="javascript:void(0);">Специалистам</a>
         </li>
         <li class="header-nav__item">
-          <a class="header-nav__link" href="#">Где купить</a>
+          <a class="header-nav__link" href ="javascript:void(0);">Где купить</a>
         </li>
         <li class="header-nav__item">
-          <a class="header-nav__link" href="#">Контакты</a>
+          <a class="header-nav__link" href ="javascript:void(0);">Контакты</a>
         </li>
       </ul>
       <div class="header__ui-btn">
@@ -53,12 +53,9 @@
         </button>
         <!-- hamburger-menu -->
         <div class="hamburger-menu">
-          <input id="menu__toggle" type="checkbox" />
-          <label class="menu__btn" for="menu__toggle">
-            <span></span>
-          </label>
           <ul class="menu__box">
-            <li><a class="menu__item menu__item--list" href="#">Каталог</a>
+            <div class="hamburger-menu__btn-close"></div>
+            <li><a class="menu__item menu__item--list" href ="javascript:void(0);">Каталог</a>
               <ul class="menu__box-dropdawn">
                 <li class="menu__box-dropdawn-item">Пробиотики</li>
                 <li class="menu__box-dropdawn-item">Минеральные соли</li>
@@ -66,11 +63,11 @@
                 <li class="menu__box-dropdawn-item">Морская вода</li>
               </ul>
             </li>
-            <li><a class="menu__item" href="#">Это интересно</a></li>
-            <li><a class="menu__item" href="#">Вопрос-ответ</a></li>
-            <li><a class="menu__item" href="#">Специалистам</a></li>
-            <li><a class="menu__item" href="#">Где купить</a></li>
-            <li><a class="menu__item" href="#">Контакты</a></li>
+            <li><a class="menu__item" href ="javascript:void(0);">Это интересно</a></li>
+            <li><a class="menu__item" href ="javascript:void(0);">Вопрос-ответ</a></li>
+            <li><a class="menu__item" href ="javascript:void(0);">Специалистам</a></li>
+            <li><a class="menu__item" href ="javascript:void(0);">Где купить</a></li>
+            <li><a class="menu__item" href ="javascript:void(0);">Контакты</a></li>
           </ul>
         </div>
         <div class="layout-hamburger"></div>
@@ -103,7 +100,8 @@
 <div class="layout-feedback"></div>
 
     <button class="feedback-btn">
-  Обратная связь
+  <span class="feedback-btn-text">Обратная связь</span>
+  <img src='./../../img/feedback-mail-mob.svg' class="feedback-btn-img"/>
 </button>
 
 <div class="feedback-form">
@@ -141,7 +139,7 @@
         Согласие на обработку персональных данных и с Политикой конфиденциальности
       </label>
       <!-- btn -->
-      <a href="#" class="feedback-btn-send">отправить</a>
+      <a href ="javascript:void(0);" class="feedback-btn-send">отправить</a>
 
       <div class="feedback-tagging"><span class="star">*</span> Поля, обязательные для заполнения</div>
     </div>
@@ -176,9 +174,9 @@
 					</div>
 
 					<div class="but__container">
-						<button class="butt active" onclick="go.className = 'one'">01</button>
-						<button class="butt" onclick="go.className = 'two'">02</button>
-						<button class="butt" onclick="go.className = 'three'">03</button>
+						<button class="butt one active" onclick="go.className = 'one'">01</button>
+						<button class="butt two" onclick="go.className = 'two'">02</button>
+						<button class="butt three" onclick="go.className = 'three'">03</button>
 					</div>		
 			</div>
 
@@ -205,9 +203,9 @@
 				</div>
 
 				<div class="but_containers">
-					<button class="butts actives" onclick="gos.className = 'ones'">01</button>
-					<button class="butts" onclick="gos.className = 'twos'">02</button>
-					<button class="butts" onclick="gos.className = 'threes'">03</button>
+					<button class="butts one actives" onclick="gos.className = 'ones'">01</button>
+					<button class="butts two" onclick="gos.className = 'twos'">02</button>
+					<button class="butts three" onclick="gos.className = 'threes'">03</button>
 				</div>	
 			</div>
 
@@ -234,9 +232,9 @@
 				</div>
 
 				<div class="but_plan">
-					<button class="buttsplan activess" onclick="plan.className = 'onesa'">01</button>
-					<button class="buttsplan" onclick="plan.className = 'twosb'">02</button>
-					<button class="buttsplan" onclick="plan.className = 'threesc'">03</button>
+					<button class="buttsplan one activess" onclick="plan.className = 'onesa'">01</button>
+					<button class="buttsplan two" onclick="plan.className = 'twosb'">02</button>
+					<button class="buttsplan three" onclick="plan.className = 'threesc'">03</button>
 				</div>	
 			</div>
 
@@ -261,9 +259,9 @@
 				</div>
 
 				<div class="but_seven">
-					<button class="buttseven activeseven" onclick="seven.className = 'oneseven'">01</button>
-					<button class="buttseven" onclick="seven.className = 'twoseven'">02</button>
-					<button class="buttseven" onclick="seven.className = 'threeseven'">03</button>
+					<button class="buttseven one activeseven" onclick="seven.className = 'oneseven'">01</button>
+					<button class="buttseven two" onclick="seven.className = 'twoseven'">02</button>
+					<button class="buttseven three" onclick="seven.className = 'threeseven'">03</button>
 				</div>	
 			</div>
 
@@ -289,9 +287,9 @@
 				</div>
 
 				<div class="but_tel">
-					<button class="butttel activemini" onclick="tel.className = 'onetel'">01</button>
-					<button class="butttel" onclick="tel.className = 'twotel'">02</button>
-					<button class="butttel" onclick="tel.className = 'threetel'">03</button>
+					<button class="butttel one activemini" onclick="tel.className = 'onetel'">01</button>
+					<button class="butttel two" onclick="tel.className = 'twotel'">02</button>
+					<button class="butttel three" onclick="tel.className = 'threetel'">03</button>
 				</div>	
 			</div>
 
@@ -316,9 +314,9 @@
 				</div>
 
 				<div class="but_mini">
-					<button class="buttmini" onclick="mini.className = 'onemini'">01</button>
-					<button class="buttmini" onclick="mini.className = 'twomini'">02</button>
-					<button class="buttmini" onclick="mini.className = 'threemini'">03</button>
+					<button class="buttmini one activemini" onclick="mini.className = 'onemini'">01</button>
+					<button class="buttmini two" onclick="mini.className = 'twomini'">02</button>
+					<button class="buttmini three" onclick="mini.className = 'threemini'">03</button>
 				</div>	
 			</div>
 		</main>
@@ -390,7 +388,7 @@
         <div class="company__content-text-sm hide">
           Продукция создана на основе натуральных биологически-активных веществ: лактобактерий, витаминов, минералов и экстрактов целебных растений, подобранных в оптимальных дозировках и сочетаниях, прошла лабораторные исследования на территории РФ и рекомендована к применению ФГБНУ НИИ питания РАМН РФ.
         </div>
-        <a href="#" class="more-btn">Подробнее</a>
+        <a href ="javascript:void(0);" class="more-btn">Подробнее</a>
       </div>
     </div>
   </div>
@@ -670,22 +668,22 @@
 					<a class="footer__content-btn">Подписаться</a>
 				</div>
 				<div class="footer__content-soc-wrap">
-					<a href="#" class="footer__content-soc">
+					<a href ="javascript:void(0);" class="footer__content-soc">
 						<img src="./../../img/footer/vk.svg"/>
 					</a>
-					<a href="#" class="footer__content-soc">
+					<a href ="javascript:void(0);" class="footer__content-soc">
 						<img src="./../../img/footer/ok.svg"/>
 					</a>
-					<a href="#" class="footer__content-soc">
+					<a href ="javascript:void(0);" class="footer__content-soc">
 						<img src="./../../img/footer/fb.svg"/>
 					</a>
-					<a href="#" class="footer__content-soc">
+					<a href ="javascript:void(0);" class="footer__content-soc">
 						<img src="./../../img/footer/inst.svg"/>
 					</a>
-					<a href="#" class="footer__content-soc">
+					<a href ="javascript:void(0);" class="footer__content-soc">
 						<img src="./../../img/footer/twitter.svg"/>
 					</a>
-					<a href="#" class="footer__content-soc">
+					<a href ="javascript:void(0);" class="footer__content-soc">
 						<img src="./../../img/footer/yt.svg"/>
 					</a>
 				</div>

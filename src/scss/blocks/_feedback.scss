@@ -1,7 +1,7 @@
 .feedback-btn {
 	position: fixed;
 	top: 320px;
-	left: calc(100% - 118px);
+	right: -70px;
 	z-index: 9;
 	transform: rotate(270deg);
 
@@ -20,12 +20,18 @@
 	border: 1px solid #F9931F;
 	border-radius: 4px 4px 0 0;
 
-	@media (max-width: 1024px) {
-		left: calc(100% - 118px);
+	& .feedback-btn-img {
+		display: none;
+		width: 20px;
+		height: 16px;
 	}
 
 	&--open {
 		display: none;
+	}
+
+	@media (max-width: 1024px) {
+		right: -70px;
 	}
 
 	@media (max-width: 375px) {
@@ -43,11 +49,14 @@
 		border-radius: 4px 0 0 4px;
 		top: 442px;
 		left: calc(100% - 44px);
-	}
 
-	& img {
-		width: 20px;
-		height: 16px;
+		& .feedback-btn-text {
+			display: none;
+		}
+
+		& .feedback-btn-img {
+			display: block;
+		}
 	}
 }
 

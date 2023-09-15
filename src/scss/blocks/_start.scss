@@ -35,14 +35,61 @@
 }
 
 
-.active {
+.one.active {
     color: #fff;
-    background: url('./../../img/start/icon/11.svg') no-repeat;
+    background: url(./../../img/start/icon/11.svg) no-repeat center center;
+    width: 60px;
+    height: 64px;
+    background-size: contain !important;
 }
 
-.actives {
+.two.active {
     color: #fff;
-    background: url('./../../img/start/icon/11.svg') no-repeat;
+    background: url(./../../img/start/icon/22.svg) no-repeat center center;
+    width: 60px;
+    height: 64px;
+    background-size: contain !important;
+}
+
+.three.active {
+    color: #fff;
+    background: url(./../../img/start/icon/33.svg) no-repeat center center;
+    width: 60px;
+    height: 64px;
+    background-size: contain !important;
+}
+
+.one.actives {
+    color: #fff;
+    background: url(./../../img/start/icon/11.svg) no-repeat center center;
+    width: 45px;
+    height: 48px;
+
+    @media (max-width: 1440px) {
+        background-size: contain !important;
+    }
+}
+
+.two.actives {
+    color: #fff;
+    background: url(./../../img/start/icon/22.svg) no-repeat center center;
+    width: 48px;
+    height: 48px;
+
+    @media (max-width: 1440px) {
+        background-size: contain !important;
+    }
+}
+
+.three.actives {
+    color: #fff;
+    background: url(./../../img/start/icon/33.svg) no-repeat center center;
+    width: 45px;
+    height: 48px;
+
+    @media (max-width: 1440px) {
+        background-size: contain !important;
+    }
 }
 
 .but__container {
@@ -59,8 +106,9 @@
     position: relative;
     z-index: 6;
     font-weight: 300;
-    font-size: 18px;
-    padding: 24px 30px 30px 20px;
+    font-size: 17px;
+    padding: 15px 22px;
+    margin-right: 20px;
 }
 
 .title {
@@ -264,7 +312,9 @@
     z-index: 7;
     font-weight: 300;
     font-size: 14px;
-    padding: 24px 30px 30px 20px;
+    line-height: 24px;
+    padding: 12px 16px;
+    margin-right: 10px;
 }
 
 .ones .aaas {
@@ -471,12 +521,46 @@
 }
 
 .buttsplan {
-    padding: 24px 30px 30px 20px;
+    position: relative;
+    z-index: 7;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 12px 16px;
+    margin-right: 9px;
 }
 
-.activess {
+.one.activess {
     color: #fff;
-    background: url('./../../img/start/icon/11.svg') no-repeat;
+    background: url(./../../img/start/icon/11.svg) no-repeat center center;
+    width: 45px;
+    height: 48px;
+
+    @media (max-width: 1024px) {
+        background-size: contain !important;
+    }
+}
+
+.two.activess {
+    color: #fff;
+    background: url(./../../img/start/icon/22.svg) no-repeat center center;
+    width: 48px;
+    height: 48px;
+
+    @media (max-width: 1024px) {
+        background-size: contain !important;
+    }
+}
+
+.three.activess {
+    color: #fff;
+    background: url(./../../img/start/icon/33.svg) no-repeat center center;
+    width: 45px;
+    height: 48px;
+
+    @media (max-width: 1024px) {
+        background-size: contain !important;
+    }
 }
 
 
@@ -636,12 +720,46 @@
 }
 
 .buttseven {
-    padding: 24px 30px 30px 20px;
+    position: relative;
+    z-index: 7;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 12px 16px;
+    margin-right: 9px;
 }
 
-.activeseven {
+.one.activeseven {
     color: #fff;
-    background: url('./../../img/start/icon/11.svg') no-repeat;
+    background: url(./../../img/start/icon/11.svg) no-repeat center center;
+    width: 45px;
+    height: 48px;
+
+    @media (max-width: 768px) {
+        background-size: contain !important;
+    }
+}
+
+.two.activeseven {
+    color: #fff;
+    background: url(./../../img/start/icon/22.svg) no-repeat center center;
+    width: 48px;
+    height: 48px;
+
+    @media (max-width: 768px) {
+        background-size: contain !important;
+    }
+}
+
+.three.activeseven {
+    color: #fff;
+    background: url(./../../img/start/icon/33.svg) no-repeat center center;
+    width: 45px;
+    height: 48px;
+
+    @media (max-width: 768px) {
+        background-size: contain !important;
+    }
 }
 
 
@@ -755,13 +873,47 @@
 }
 
 .butttel {
-    padding: 20px 28px 20px 16px;
+    position: relative;
+    z-index: 7;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 12px 16px;
+    margin-right: 9px;
     transform: translate(23px, -200px);
 }
 
-.activetel {
+.one.activetel {
     color: #fff;
-    background: url('./../../img/start/icon/tel.png') no-repeat;
+    background: url(./../../img/start/icon/11.svg) no-repeat center center;
+    width: 48px;
+    height: 50px;
+
+    @media (max-width: 375px) {
+        background-size: contain !important;
+    }
+}
+
+.two.activetel {
+    color: #fff;
+    background: url(./../../img/start/icon/22.svg) no-repeat center center;
+    width: 50px;
+    height: 50px;
+
+    @media (max-width: 375px) {
+        background-size: contain !important;
+    }
+}
+
+.three.activetel {
+    color: #fff;
+    background: url(./../../img/start/icon/33.svg) no-repeat center center;
+    width: 48px;
+    height: 50px;
+
+    @media (max-width: 375px) {
+        background-size: contain !important;
+    }
 }
 
 .onetel .tel_containera {
@@ -873,12 +1025,49 @@
 }
 
 .buttmini {
-    padding: 20px 28px 20px 16px;
+    position: relative;
+    z-index: 7;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 12px 16px;
+    margin-right: 9px;
 }
 
-.activemini {
+.one.activemini {
     color: #fff;
-    background: url('./../../img/start/icon/tel.png') no-repeat;
+    background: url(./../../img/start/icon/11.svg) no-repeat center center;
+    width: 48px;
+    height: 50px;
+    color: #fff;
+
+    @media (max-width: 375px) {
+        background-size: contain !important;
+    }
+}
+
+.two.activemini {
+    color: #fff;
+    background: url(./../../img/start/icon/22.svg) no-repeat center center;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+
+    @media (max-width: 375px) {
+        background-size: contain !important;
+    }
+}
+
+.three.activemini {
+    color: #fff;
+    background: url(./../../img/start/icon/33.svg) no-repeat center center;
+    width: 48px;
+    height: 50px;
+    color: #fff;
+
+    @media (max-width: 375px) {
+        background-size: contain !important;
+    }
 }
 
 

@@ -23,11 +23,17 @@ function feedback() {
 		body.classList.remove('scroll-disabled');
 	}
 
-	if (document.documentElement.clientWidth < 376) {
-		feedbackBtn.innerHTML = "<img src='./../../img/feedback-mail-mob.svg' />";
-	} else {
-		feedbackBtn.innerHTML = "обратная связь";
-	}
+	// window.addEventListener('resize', changeBtnContent);
+
+	// changeBtnContent();
+
+	// function changeBtnContent() {
+	// 	if (document.documentElement.clientWidth < 640) {
+	// 		feedbackBtn.innerHTML = "<img src='./../../img/feedback-mail-mob.svg' />";
+	// 	} else {
+	// 		feedbackBtn.innerHTML = "обратная связь";
+	// 	}
+	// }
 }
 
 export default feedback;
