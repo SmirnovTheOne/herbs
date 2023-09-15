@@ -1,0 +1,296 @@
+.section {
+	margin-bottom: 136px;
+}
+
+.news {
+	display: flex;
+	flex-direction: column;
+	gap: 36px;
+	width: 100%;
+	position: relative;
+
+	@media (max-width: 1024px) {
+		gap: 32px;
+	}
+}
+
+.news__content-p-yellow {
+	position: absolute;
+	width: 139px;
+	height: 139px;
+	top: 550px;
+	left: 574px;
+
+	@media (max-width: 1440px) {
+		width: 139px;
+		height: 139px;
+		top: 419px;
+		left: 473px;
+	}
+
+	@media (max-width: 1280px) {
+		left: 537px;
+	}
+
+	@media (max-width: 1024px) {
+		left: 519px;
+	}
+
+	@media (max-width: 375px) {
+		display: none;
+	}
+}
+
+.news__content-p-green {
+	position: absolute;
+	width: 46px;
+	height: 48px;
+	right: 9%;
+	bottom: 603px;
+	rotate: -119deg;
+
+	@media (max-width: 1440px) {
+		width: 46px;
+		height: 48px;
+		right: initial;
+		left: 1025px;
+		bottom: initial;
+		top: -26px;
+		rotate: -119deg;
+	}
+
+	@media (max-width: 1280px) {
+		left: 1105px;
+	}
+
+	@media (max-width: 1024px) {
+		display: none;
+	}
+}
+
+.news__content-p-blue {
+	position: absolute;
+	width: 105px;
+	height: 228px;
+	top: 213px;
+	right: -186px;
+	overflow: hidden;
+
+	@media (max-width: 1440px) {
+		width: 89px;
+		height: 178px;
+		top: 159px;
+		right: -110px;
+		overflow: hidden;
+	}
+
+	@media (max-width: 1280px) {
+		display: none;
+	}
+}
+
+.news__title-wrap {
+	@media (max-width: 375px) {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.news__slider-mob {
+	display: none;
+
+	@media (max-width: 375px) {
+		display: block;
+		width: 64px;
+		height: 26px;
+	}
+}
+
+.news__title {
+	font-family: var(--font-main);
+	font-weight: 500;
+	font-size: 56px;
+	line-height: 64px;
+	text-transform: uppercase;
+	color: var(--text-color);
+
+	@media (max-width: 1440px) {
+		font-weight: 500;
+		font-size: 42px;
+		line-height: 48px;
+	}
+
+	@media (max-width: 1024px) {
+		font-weight: 500;
+		font-size: 37px;
+		line-height: 44px;
+	}
+
+	@media (max-width: 375px) {
+		font-size: 30px;
+		line-height: 32px;
+	}
+}
+
+.news__card {
+	display: flex;
+	gap: 36px;
+
+	@media (max-width: 1440px) {
+		gap: 34px;
+	}
+
+	@media (max-width: 1280px) {
+		gap: 34px;
+	}
+
+	@media (max-width: 768px) {
+		overflow-x: scroll;
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+}
+
+.news__card-item {
+	display: flex;
+	flex-direction: column;
+	gap: 36px;
+	width: 476px;
+	cursor: pointer;
+
+	&:hover {
+		.news__card-title {
+			color: #EF4D9C;
+		}
+
+		.news__card-img img {
+			transition: transform .5s;
+			transform: scale(1.1)
+		}
+	}
+
+	@media (max-width: 1440px) {
+		gap: 28px;
+		width: 381px;
+	}
+
+	@media (max-width: 1024px) {
+		width: 284px;
+	}
+
+	@media (max-width: 375px) {
+		width: 330px;
+		gap: 24px;
+	}
+
+	@media (max-width: 320px) {
+		width: 276px;
+	}
+}
+
+.news__card-img {
+	width: 100%;
+	overflow: hidden;
+
+	@media (max-width: 1440px) {
+		width: 381px;
+		height: 230px;
+	}
+
+	@media (max-width: 1024px) {
+		width: 284px;
+	}
+
+	@media (max-width: 375px) {
+		width: 330px;
+		height: 165px;
+	}
+
+	@media (max-width: 320px) {
+		width: 276px;
+	}
+}
+
+.news__card-info {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+
+	@media (max-width: 1440px) {
+		gap: 12px;
+	}
+
+	@media (max-width: 375px) {
+		gap: 10px;
+	}
+}
+
+.news__card-date {
+	font-family: var(--font-main);
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 24px;
+	color: #71BD44;
+
+	@media (max-width: 1440px) {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	@media (max-width: 375px) {
+		font-size: 15px;
+		line-height: 16px;
+	}
+}
+
+.news__card-title {
+	font-family: var(--font-main);
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 32px;
+	color: var(--text-color);
+
+	@media (max-width: 1440px) {
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 24px;
+	}
+
+	@media (max-width: 1024px) {
+		font-size: 22px;
+		line-height: 22px;
+	}
+
+	@media (max-width: 375px) {
+		font-size: 20px;
+		line-height: 24px;
+	}
+}
+
+.news__card-description {
+	font-family: var(--font-main);
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 30px;
+	color: var(--text-color);
+
+	@media (max-width: 1440px) {
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	@media (max-width: 1024px) {
+		font-size: 17px;
+		line-height: 24px;
+	}
+
+	@media (max-width: 375px) {
+		font-size: 17px;
+		line-height: 24px;
+	}
+}

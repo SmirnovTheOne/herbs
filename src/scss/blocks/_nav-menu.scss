@@ -1,0 +1,159 @@
+/* Nav menu */
+.hamburger-menu {
+	display: none;
+
+	@media (max-width: 1024px) {
+		display: block;
+		width: 24px;
+		height: 24px;
+		position: relative;
+	}
+}
+
+#menu__toggle {
+	opacity: 0;
+}
+
+#menu__toggle:checked+.menu__btn>span {
+	transform: rotate(45deg);
+	width: 24px;
+	height: 1px;
+}
+
+#menu__toggle:checked+.menu__btn>span::before {
+	top: 0;
+	transform: rotate(0deg);
+}
+
+#menu__toggle:checked+.menu__btn>span::after {
+	top: 0;
+	transform: rotate(90deg);
+}
+
+#menu__toggle:checked~.menu__box {
+	right: 0;
+}
+
+.menu__btn {
+	position: absolute;
+	top: 10px;
+	left: 0;
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	z-index: 61;
+}
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+	display: block;
+	position: absolute;
+	width: 24px;
+	height: 2px;
+	background-color: #EF4D9C;
+	transition-duration: .25s;
+	z-index: 1;
+}
+
+.menu__btn>span {
+	width: 18px;
+}
+
+.menu__btn>span::before {
+	content: '';
+	top: -8px;
+}
+
+.menu__btn>span::after {
+	content: '';
+	top: 8px;
+}
+
+.menu__box {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	position: fixed;
+	top: 0;
+	right: -100%;
+	width: 295px;
+	height: 100%;
+	margin: 0;
+	padding: 76px 79px 76px 56px;
+	list-style: none;
+	background-color: rgba(255, 255, 255, .92);
+	transition-duration: .25s;
+	z-index: 60;
+
+	@media (max-width: 375px) {
+		width: 100%;
+		padding: 56px 50px;
+		gap: 12px;
+	}
+}
+
+.menu__item {
+	display: inline-block;
+	font-family: var(--font-main);
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 32px;
+	color: var(--text-color);
+	text-transform: uppercase;
+	position: relative;
+
+	&--active {
+		&::before {
+			transform: rotate(180deg);
+		}
+
+		@media (max-width: 375px) {
+			color: #EF4D9C;
+		}
+	}
+}
+
+
+.menu__item--list {
+	&::before {
+		display: block;
+		position: absolute;
+		content: '';
+		width: 15px;
+		height: 10px;
+		background: url('./../../img/hamburger-arrow-open.svg') no-repeat;
+		background-size: contain;
+		right: -25px;
+		top: 10px;
+	}
+}
+
+
+.menu__box-dropdawn {
+	display: none;
+	flex-direction: column;
+	margin-top: 20px;
+	width: 100%;
+	gap: 10px;
+
+	&--open {
+		display: flex;
+
+	}
+
+	@media (max-width: 375px) {
+		margin-top: 12px;
+		gap: 10px;
+	}
+}
+
+.menu__box-dropdawn-item {
+	display: block;
+	width: 100%;
+	font-family: var(--font-main);
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 24px;
+	color: var(--text-color);
+}

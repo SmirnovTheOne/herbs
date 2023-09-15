@@ -1,0 +1,44 @@
+:root {
+	--container-width: 1530px;
+	--container-padding: 15px;
+
+	@media (max-width: 1440px) {
+		--container-width: 1212px;
+	}
+
+	@media (max-width: 1280px) {
+		--container-width: 1212px;
+	}
+
+	@media (max-width: 1024px) {
+		--container-width: 920px;
+	}
+
+	@media (max-width: 768px) {
+		--container-width: 660px;
+	}
+
+	@media (max-width: 375px) {
+		--container-width: 330px;
+	}
+
+	--font-main: 'PF Handbook Pro',
+	sans-serif;
+	--font-accent: 'Playfair Display',
+	serif;
+
+	--page-bg: #fff;
+	--accent: #ac182c;
+
+	--laptop-size: 1199px;
+	--tablet-size: 959px;
+	--mobile-size: 599px;
+
+	//color
+	--text-color: #333333;
+}
+
+// UI-animation
+.--none {
+	display: none;
+}

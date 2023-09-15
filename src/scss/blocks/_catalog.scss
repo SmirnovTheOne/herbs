@@ -1,0 +1,441 @@
+.section {
+	margin-bottom: 136px;
+}
+
+.catalog {
+	display: flex;
+	margin: 0 auto;
+	gap: 36px;
+	width: 100%;
+
+	@media (max-width: 1440px) {
+		gap: 16px;
+	}
+
+	@media (max-width: 768px) {
+		flex-direction: column;
+	}
+}
+
+.catalog__card {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.catalog__title-wrap {
+	display: flex;
+	align-items: flex-start;
+}
+
+.catalog__title {
+	font-family: var(--font-main);
+	font-weight: 300;
+	font-size: 40px;
+	line-height: 48px;
+	text-transform: uppercase;
+	color: var(--text-color);
+	writing-mode: vertical-lr;
+	white-space: nowrap;
+	margin-left: 42px;
+	transform: rotate(180deg);
+
+	@media (max-width: 1440px) {
+		margin-left: 19px;
+		font-weight: 300;
+		font-size: 30px;
+		line-height: 36px;
+	}
+
+	@media (max-width: 1024px) {
+		margin-left: 11px;
+		font-size: 26px;
+		line-height: 32px;
+	}
+
+	@media (max-width: 768px) {
+		font-family: var(--font-main);
+		font-weight: 500;
+		font-size: 30px;
+		line-height: 32px;
+		text-transform: uppercase;
+		color: var(--text-color);
+		writing-mode: inherit;
+		white-space: nowrap;
+		margin-left: 22px;
+		transform: inherit;
+	}
+}
+
+.catalog__card-wrapper {
+	overflow: hidden;
+	position: relative;
+
+	& .catalog__card-box {
+		position: absolute;
+		left: 794px;
+		top: 58px;
+		background: url('./../../img/catalog/box-1920.svg') no-repeat;
+		background-size: contain;
+		width: 520px;
+		height: 454px;
+		transition: all 0.5s ease;
+
+		@media (max-width: 1440px) {
+			left: 632px;
+			top: 58px;
+			width: 404px;
+			height: 353px;
+			background: url('./../../img/catalog/box-1440.svg') no-repeat;
+		}
+
+		@media (max-width: 1280px) {
+			left: 593px;
+			top: 54px;
+			width: 339px;
+			height: 296px;
+			background: url('./../../img/catalog/box-1280.svg') no-repeat;
+
+		}
+
+		@media (max-width: 1024px) {
+			left: 399px;
+			top: 65px;
+			width: 321px;
+			height: 280px;
+			background: url('./../../img/catalog/box-1024.svg') no-repeat;
+
+		}
+
+		@media (max-width: 768px) {
+			left: 399px;
+			top: 52px;
+			width: 276px;
+			height: 241px;
+			background: url('./../../img/catalog/box-768.svg') no-repeat;
+		}
+
+		@media (max-width: 375px) {
+			left: 50px;
+			top: inherit;
+			bottom: -100px;
+			width: 276px;
+			height: 241px;
+			background: url('./../../img/catalog/box-375.svg') no-repeat;
+		}
+
+		@media (max-width: 320px) {
+			left: 44px;
+			top: inherit;
+			bottom: -100px;
+			width: 234px;
+			height: 204px;
+			background: url('./../../img/catalog/box-320.svg') no-repeat;
+		}
+	}
+
+	&--probiotics {
+		background: #A3E07E;
+	}
+
+	&--salts {
+		background: #FDED84;
+	}
+
+	&--complex {
+		background: #FF9CCA;
+	}
+
+	&--water {
+		background: #FDB96B;
+	}
+
+	//mod-class-inverse
+	&:hover {
+		&.catalog__card-wrapper--probiotics {
+			background: #71BD44;
+		}
+
+		&.catalog__card-wrapper--salts {
+			background: #FFDD00;
+		}
+
+		&.catalog__card-wrapper--complex {
+			background: #F669B8;
+		}
+
+		&.catalog__card-wrapper--water {
+			background: #F9931F;
+		}
+
+		& .catalog__card-image--probiotics {
+			background: url("./../../img/catalog/probiotics-inverse.svg") no-repeat;
+			background-size: contain;
+		}
+
+		& .catalog__card-image--salts {
+			background: url("./../../img/catalog/salts-inverse.svg") no-repeat;
+			background-size: contain;
+		}
+
+		& .catalog__card-image--complex {
+			background: url("./../../img/catalog/complex-inverse.svg") no-repeat;
+			background-size: contain;
+		}
+
+		& .catalog__card-image--water {
+			background: url("./../../img/catalog/water-inverse.svg") no-repeat;
+			background-size: contain;
+		}
+
+		& .catalog__card-box {
+			position: absolute;
+			left: 794px;
+			top: 38px;
+			width: 520px;
+			height: 454px;
+			transition: all 0.5s ease;
+
+			@media (max-width: 1440px) {
+				left: 632px;
+				top: 38px;
+				width: 404px;
+				height: 353px;
+			}
+
+			@media (max-width: 1280px) {
+				left: 593px;
+				top: 50px;
+				width: 339px;
+				height: 296px;
+			}
+
+			@media (max-width: 1024px) {
+				left: 399px;
+				top: 60px;
+				width: 321px;
+				height: 280px;
+			}
+
+			@media (max-width: 768px) {
+				left: 399px;
+				top: 52px;
+				width: 276px;
+				height: 241px;
+			}
+
+			@media (max-width: 375px) {
+				left: 50px;
+				top: inherit;
+				bottom: -100px;
+				width: 276px;
+				height: 241px;
+			}
+
+			@media (max-width: 320px) {
+				left: 44px;
+				top: inherit;
+				bottom: -100px;
+				width: 234px;
+				height: 204px;
+			}
+		}
+
+		& .catalog__card-btn {
+			color: #ffffff;
+			background-color: var(--text-color);
+			border: 1px solid var(--text-color);
+			border-radius: 4px;
+		}
+	}
+}
+
+.catalog__card-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 64px 209px 64px 84px;
+	width: calc(100vw - 144px);
+
+	@media (max-width: 1440px) {
+		padding: 46px 114px 47px 44px;
+		width: calc(100vw - 71px);
+	}
+
+	@media (max-width: 1280px) {
+		padding: 46px 34px 47px 44px;
+	}
+
+	@media (max-width: 1024px) {
+		padding: 35px 51px 35px 44px;
+		width: calc(100vw - 52px);
+	}
+
+	@media (max-width: 768px) {
+		padding: 37px 41px 37px 38px;
+	}
+
+	@media (max-width: 375px) {
+		padding: 41px 28px 175px 22px;
+		width: 100%;
+	}
+
+	@media (max-width: 320px) {
+		padding: 41px 22px 151px;
+		width: 100%;
+	}
+}
+
+.catalog__card-info {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	width: 562px;
+
+	@media (max-width: 1440px) {
+		width: 470px;
+		gap: 18px;
+	}
+
+	@media (max-width: 1024px) {
+		width: 330px;
+	}
+
+	@media (max-width: 768px) {
+		width: 300px;
+		gap: 20px;
+	}
+
+	@media (max-width: 375px) {
+		width: 325px;
+	}
+}
+
+.catalog__card-title-mob {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+
+	@media (max-width: 1440px) {
+		gap: 18px;
+	}
+
+	@media (max-width: 768px) {
+		flex-direction: row;
+		align-items: center;
+		gap: 17px;
+	}
+}
+
+.catalog__card-arrow {
+	display: none;
+
+	@media (max-width: 768px) {
+		display: flex;
+		align-items: center;
+		padding-top: 4px;
+	}
+}
+
+.catalog__card-image {
+	width: 84px;
+	height: 84px;
+	flex-shrink: 0;
+
+	@media (max-width: 1440px) {
+		width: 62px;
+		height: 62px;
+	}
+
+	@media (max-width: 768px) {
+		width: 64px;
+		height: 64px;
+	}
+
+	&.catalog__card-image--probiotics {
+		background: url("./../../img/catalog/probiotics.svg") no-repeat;
+		background-size: contain;
+	}
+
+	&.catalog__card-image--salts {
+		background: url("./../../img/catalog/salts.svg") no-repeat;
+		background-size: contain;
+	}
+
+	&.catalog__card-image--complex {
+		background: url("./../../img/catalog/complex.svg") no-repeat;
+		background-size: contain;
+	}
+
+	&.catalog__card-image--water {
+		background: url("./../../img/catalog/water.svg") no-repeat;
+		background-size: contain;
+	}
+}
+
+.catalog__card-title {
+	font-family: var(--font-main);
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48px;
+	color: var(--text-color);
+
+	@media (max-width: 1440px) {
+		font-size: 36px;
+		line-height: 36px;
+	}
+
+	@media (max-width: 768px) {
+		font-size: 27px;
+		line-height: 32px;
+		width: 166px;
+	}
+
+	@media (max-width: 375px) {
+		width: 166px;
+	}
+
+}
+
+.catalog__card-description {
+	font-family: var(--font-main);
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 30px;
+	color: var(--text-color);
+
+	@media (max-width: 1440px) {
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	@media (max-width: 1024px) {
+		font-size: 17px;
+	}
+}
+
+.catalog__card-btn {
+	display: inline-block;
+	box-sizing: content-box;
+	padding: 17px 41px;
+	cursor: pointer;
+	font-family: var(--font-main);
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: var(--text-color);
+	border: 1px solid var(--text-color);
+	border-radius: 4px;
+
+	@media (max-width: 1440px) {
+		padding: 14px 33px;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 18px;
+	}
+
+	@media (max-width: 768px) {
+		display: none;
+	}
+}

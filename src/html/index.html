@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, 
+      initial-scale=1.0"
+    />
+    <link href="https://fonts.cdnfonts.com/css/pf-handbook-pro" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" rel="stylesheet"/>
+    <title>Herbs</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    @@include('blocks/header.html')
+    @@include('blocks/feedback.html')
+
+    @@include('blocks/start.html')
+    @@include('blocks/company.html')
+    @@include('blocks/catalog.html')
+    @@include('blocks/news.html')
+    @@include('blocks/specialist.html')
+    @@include('blocks/slider.html')
+
+    @@include('blocks/footer.html')
+    
+    <script src="./js/index.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+        $('.slider--main').slick({
+            arrows: false,
+            dots: true,
+        });
+
+        $('.slider--brands').slick({
+            arrows: false,
+            infinite: true,
+            useTransform: true,
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 0,
+            speed: 8000,
+            pauseOnHover: false,
+            cssEase: 'linear',
+            responsive: [
+                {
+                    breakpoint: 1400,
+                    settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 1000,
+                    settings: {
+                        slidesToShow: 6,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 380,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+        
+        var isTouching = false;
+            window.addEventListener('touchstart', function() {
+              document.documentElement.classList.remove('mouse');
+              document.documentElement.classList.add('touch');
+              isTouching = true;
+            });
+  
+            window.addEventListener('mousemove', function() {
+              if(isTouching) isTouching = false
+              
+              else
+              {
+                document.documentElement.classList.remove('touch');
+                document.documentElement.classList.add('mouse');
+              }
+            });
+    </script>
+  </body>
+</html>

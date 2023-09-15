@@ -1,0 +1,930 @@
+.wrapper {
+    overflow: hidden;
+}
+
+.aaa__container,
+.bbb__container,
+.ccc__container {
+    max-width: 95.625rem;
+    margin: 0 auto;
+    padding: 0 0.9375rem;
+}
+
+.but__container {
+    max-width: 95.625rem;
+    margin: 0 auto;
+    padding: 0 0.9375rem;
+}
+
+.item {
+    height: 884px;
+
+    @media (max-width:1439px) {
+        display: none;
+    }
+}
+
+.know {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 18px 42px;
+    background-color: #EF4D9C;
+    position: relative;
+    z-index: 22;
+}
+
+
+.active {
+    color: #fff;
+    background: url('./../../img/start/icon/11.svg') no-repeat;
+}
+
+.actives {
+    color: #fff;
+    background: url('./../../img/start/icon/11.svg') no-repeat;
+}
+
+.but__container {
+    position: relative;
+    z-index: 4;
+    transform: translateY(-2940px);
+    width: 100%;
+    margin: -36px auto;
+}
+
+
+
+.butt {
+    position: relative;
+    z-index: 6;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 24px 30px 30px 20px;
+}
+
+.title {
+    font-family: var(--font-main);
+    font-weight: 100;
+    font-size: 72px;
+    line-height: 70px;
+    color: var(--text-color);
+    max-width: 690px;
+
+}
+
+.text {
+    font-family: var(--font-main);
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 36px;
+    color: var(--text-color);
+    max-width: 585px;
+    margin: 42px 0;
+}
+
+.aaa {
+    position: static;
+}
+
+
+
+.bbb {
+    transform: translate(0, -100%);
+}
+
+.ccc {
+    transform: translate(0, -200%);
+
+}
+
+.one .bbb {
+    transition: 0.5s;
+    transform: translate(0, -100%);
+}
+
+.two .bbb {
+    transition: 0.5s;
+    transform: translate(-50px, -100%);
+}
+
+.three .bbb {
+    transition: 0.5s;
+    transform: translate(-100px, -100%);
+}
+
+.one .aaa {
+    transition: 0.5s;
+    transform: translate(0, 0);
+}
+
+.two .aaa {
+    transition: 0.5s;
+    transform: translate(-30px, 0);
+}
+
+.three .aaa {
+    transition: 0.5s;
+    transform: translate(-60px, 0);
+}
+
+
+
+
+
+
+.aaa__container {
+    transform: translate(0, -2360px);
+}
+
+.one .aaa__container {
+    transition: 0.5s;
+    transform: translate(0, -2360px);
+}
+
+.two .aaa__container {
+    transition: 0.5s;
+    transform: translate(-100%, -2360px);
+}
+
+.three .aaa__container {
+    transition: 0.5s;
+    transform: translate(-100%, -2360px);
+}
+
+
+.bbb__container {
+    transform: translate(150%, -2697px);
+}
+
+.one .bbb__container {
+    transition: 0.5s;
+    transform: translate(150%, -2697px);
+}
+
+.two .bbb__container {
+    transition: 0.5s;
+    transform: translate(0, -2697px);
+}
+
+.three .bbb__container {
+    transition: 0.5s;
+    transform: translate(-100%, -2697px);
+}
+
+
+.ccc__container {
+    transform: translate(130%, -3034px);
+}
+
+.one .ccc__container {
+    transition: 0.5s;
+    transform: translate(130%, -3034px);
+}
+
+.two .ccc__container {
+    transition: 0.5s;
+    transform: translate(130%, -3034px);
+}
+
+.three .ccc__container {
+    transition: 0.5s;
+    transform: translate(0, -3034px);
+}
+
+
+// ========================================================
+
+
+
+
+.run {
+    height: 662px;
+
+    @media (min-width:1440px) {
+        display: none;
+    }
+
+    @media (max-width:1280px) {
+        width: 1280px;
+    }
+
+    @media (max-width:1023px) {
+        display: none;
+    }
+}
+
+.aaas {
+    position: static;
+
+    @media (max-width:1280px) {
+        margin-left: -90px;
+    }
+}
+
+.bbbs {
+    transform: translate(0, -100%);
+
+    @media (max-width:1280px) {
+        margin-left: -90px;
+    }
+}
+
+.cccs {
+    transform: translate(0, -200%);
+
+    @media (max-width:1280px) {
+        margin-left: -100px;
+    }
+}
+
+
+.container-title {
+    font-size: 54px;
+}
+
+.container-text {
+    margin: 31px 0;
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.knows {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    padding: 14px 33px;
+    background-color: #EF4D9C;
+}
+
+
+.butts {
+    position: relative;
+    z-index: 7;
+    font-weight: 300;
+    font-size: 14px;
+    padding: 24px 30px 30px 20px;
+}
+
+.ones .aaas {
+    transition: 0.5s;
+    transform: translate(0, 0);
+}
+
+.twos .aaas {
+    transition: 0.5s;
+    transform: translate(-50px, 0);
+}
+
+.threes .aaas {
+    transition: 0.5s;
+    transform: translate(-100px, 0);
+}
+
+.ones .bbbs {
+    transition: 0.5s;
+    transform: translate(0, -100%);
+}
+
+.twos .bbbs {
+    transition: 0.5s;
+    transform: translate(-30px, -100%);
+}
+
+.threes .bbbs {
+    transition: 0.5s;
+    transform: translate(-60px, -100%);
+}
+
+.aaa_container {
+    max-width: 411px;
+    transform: translate(113px, -1800px);
+
+    @media (max-width:1280px) {
+        transform: translate(32px, -1800px);
+    }
+}
+
+.ones .aaa_container {
+    transition: 0.5s;
+    transform: translate(113px, -1800px);
+
+    @media (max-width:1280px) {
+        transform: translate(32px, -1800px);
+    }
+}
+
+.twos .aaa_container {
+    transition: 0.5s;
+    transform: translate(-120%, -1800px);
+}
+
+.threes .aaa_container {
+    transition: 0.5s;
+    transform: translate(-120%, -1800px);
+}
+
+.bbb_container {
+    max-width: 411px;
+    transform: translate(440%, -2060px);
+}
+
+.ones .bbb_container {
+    transition: 0.5s;
+    transform: translate(440%, -2060px);
+}
+
+.twos .bbb_container {
+    transition: 0.5s;
+    transform: translate(113px, -2060px);
+
+    @media (max-width:1280px) {
+        transform: translate(32px, -2060px);
+    }
+}
+
+.threes .bbb_container {
+    transition: 0.5s;
+    transform: translate(-110%, -2060px);
+}
+
+
+.ccc_container {
+    max-width: 411px;
+    transform: translate(390%, -2318px);
+}
+
+.ones .ccc_container {
+    transition: 0.5s;
+    transform: translate(390%, -2318px);
+}
+
+.twos .ccc_container {
+    transition: 0.5s;
+    transform: translate(390%, -2318px);
+}
+
+.threes .ccc_container {
+    transition: 0.5s;
+    transform: translate(113px, -2318px);
+
+    @media (max-width:1280px) {
+        transform: translate(32px, -2318px);
+    }
+}
+
+.but_containers {
+    transform: translate(99px, -2230px);
+
+    @media (max-width:1440px) {
+        transform: translate(22px, -2230px);
+        margin-top: -68px;
+        margin-left: 86px;
+    }
+
+    @media (max-width:1280px) {
+        transform: translate(22px, -2230px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.plan {
+    @media (max-width:767px) {
+        display: none;
+    }
+
+    height: 572px;
+
+    @media (min-width:1024px) {
+        display: none;
+    }
+
+    // .plan_containera
+
+    &_containera {
+        max-width: 390px;
+        transform: translate(53px, -1600px);
+    }
+
+    // .plan_containerb
+
+    &_containerb {
+        max-width: 390px;
+        transform: translate(300%, -1840px);
+    }
+
+    // .plan_containerc
+
+    &_containerc {
+        max-width: 390px;
+        transform: translate(300%, -2080px);
+    }
+}
+
+.planb {
+    transform: translate(0, -100%);
+}
+
+.planc {
+    transform: translate(0, -200%);
+}
+
+.plan-title {
+    font-size: 44px;
+}
+
+.plan-text {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 31px 0;
+}
+
+.knowb {
+    font-size: 14px;
+    color: #fff;
+    padding: 14px 33px;
+    background-color: #EF4D9C;
+    font-weight: 500;
+}
+
+.but {
+
+    // .but_plan
+
+    &_plan {
+        transform: translate(53px, -1990px);
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
+
+.buttsplan {
+    padding: 24px 30px 30px 20px;
+}
+
+.activess {
+    color: #fff;
+    background: url('./../../img/start/icon/11.svg') no-repeat;
+}
+
+
+
+
+.onesa .plana {
+    transition: 0.5s;
+    transform: translate(0, 0);
+}
+
+.twosb .plana {
+    transition: 0.5s;
+    transform: translate(-50px, 0);
+}
+
+.threesc .plana {
+    transition: 0.5s;
+    transform: translate(-100px, 0);
+}
+
+
+
+
+.onesa .planb {
+    transition: 0.5s;
+    transform: translate(0, -100%);
+}
+
+.twosb .planb {
+    transition: 0.5s;
+    transform: translate(-30px, -100%);
+}
+
+.threesc .planb {
+    transition: 0.5s;
+    transform: translate(-60px, -100%);
+}
+
+
+
+
+
+.onesa .plan_containera {
+    transition: 0.5s;
+    transform: translate(53px, -1600px);
+}
+
+.twosb .plan_containera {
+    transition: 0.5s;
+    transform: translate(-100%, -1600px);
+}
+
+.threesc .plan_containera {
+    transition: 0.5s;
+    transform: translate(-100%, -1600px);
+}
+
+
+
+.onesa .plan_containerb {
+    transition: 0.5s;
+    transform: translate(300%, -1840px);
+}
+
+.twosb .plan_containerb {
+    transition: 0.5s;
+    transform: translate(53px, -1840px);
+}
+
+.threesc .plan_containerb {
+    transition: 0.5s;
+    transform: translate(-100%, -1840px);
+}
+
+
+.onesa .plan_containerc {
+    transition: 0.5s;
+    transform: translate(300%, -2080px);
+}
+
+.twosb .plan_containerc {
+    transition: 0.5s;
+    transform: translate(300%, -2080px);
+}
+
+.threesc .plan_containerc {
+    transition: 0.5s;
+    transform: translate(53px, -2080px);
+}
+
+
+
+
+
+
+
+.seven {
+    @media (min-width:768px) {
+        display: none;
+    }
+
+    @media (max-width:374px) {
+        display: none;
+    }
+
+    // .seven_containera
+
+    &_containera {
+        padding-right: 20px;
+        max-width: 345px;
+        transform: translate(53px, -410px);
+    }
+
+    // .seven_containerb
+
+    &_containerb {
+        padding-right: 20px;
+        max-width: 345px;
+        transform: translate(300%, -650px);
+    }
+
+    // .seven_containerc
+
+    &_containerc {
+        padding-right: 20px;
+        max-width: 345px;
+        transform: translate(300%, -890px);
+    }
+}
+
+.seven-title {
+    font-size: 44px;
+}
+
+.seven-text {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 31px 0;
+}
+
+.mob {
+    font-size: 14px;
+    color: #fff;
+    padding: 14px 33px;
+    background-color: #EF4D9C;
+    font-weight: 500;
+}
+
+.but {
+
+    // .but_seven
+
+    &_seven {
+        transform: translate(53px, -851px);
+    }
+}
+
+.buttseven {
+    padding: 24px 30px 30px 20px;
+}
+
+.activeseven {
+    color: #fff;
+    background: url('./../../img/start/icon/11.svg') no-repeat;
+}
+
+
+
+.oneseven .seven_containera {
+    transition: 0.5s;
+    transform: translate(53px, -410px);
+}
+
+.twoseven .seven_containera {
+    transition: 0.5s;
+    transform: translate(-100%, -410px);
+}
+
+.threeseven .seven_containera {
+    transition: 0.5s;
+    transform: translate(-100%, -410px);
+}
+
+.oneseven .seven_containerb {
+    transition: 0.5s;
+    transform: translate(300%, -650px);
+}
+
+.twoseven .seven_containerb {
+    transition: 0.5s;
+    transform: translate(53px, -650px);
+}
+
+.threeseven .seven_containerb {
+    transition: 0.5s;
+    transform: translate(-100%, -650px);
+}
+
+.oneseven .seven_containerc {
+    transition: 0.5s;
+    transform: translate(300%, -890px);
+}
+
+.twoseven .seven_containerc {
+    transition: 0.5s;
+    transform: translate(300%, -890px);
+}
+
+.threeseven .seven_containerc {
+    transition: 0.5s;
+    transform: translate(53px, -890px);
+}
+
+
+
+
+
+
+
+
+.tel {
+    @media (min-width:375px) {
+        display: none;
+    }
+
+    @media (max-width:319px) {
+        display: none;
+    }
+
+    // .tel_containera
+
+    &_containera {
+        transform: translate(23px, 0);
+    }
+
+    // .tel_containerb
+
+    &_containerb {
+        transform: translate(100%, -100%);
+    }
+
+    // .tel_containerc
+
+    &_containerc {
+        transform: translate(100%, -200%);
+    }
+}
+
+.tel-title {
+    font-size: 40px;
+    line-height: 44px;
+}
+
+.tel-text {
+    font-size: 22px;
+    font-weight: 300;
+    margin: 16px 0 32px 0;
+}
+
+.mobtel {
+    font-size: 14px;
+    color: #fff;
+    padding: 14px 33px;
+    background-color: #EF4D9C;
+    font-weight: 500;
+}
+
+.but {
+
+    // .but_tel
+
+    &_tel {
+        transform: translate(0, -221px);
+    }
+}
+
+.butttel {
+    padding: 20px 28px 20px 16px;
+    transform: translate(23px, -200px);
+}
+
+.activetel {
+    color: #fff;
+    background: url('./../../img/start/icon/tel.png') no-repeat;
+}
+
+.onetel .tel_containera {
+    transition: 0.5s;
+    transform: translate(23px, 0);
+}
+
+.twotel .tel_containera {
+    transition: 0.5s;
+    transform: translate(-100%, 0);
+}
+
+.threetel .tel_containera {
+    transition: 0.5s;
+    transform: translate(-100%, 0);
+}
+
+
+.onetel .tel_containerb {
+    transition: 0.5s;
+    transform: translate(100%, -100%);
+}
+
+.twotel .tel_containerb {
+    transition: 0.5s;
+    transform: translate(23px, -100%);
+}
+
+.threetel .tel_containerb {
+    transition: 0.5s;
+    transform: translate(-100%, -100%);
+}
+
+
+.onetel .tel_containerc {
+    transition: 0.5s;
+    transform: translate(100%, -200%);
+}
+
+.twotel .tel_containerc {
+    transition: 0.5s;
+    transform: translate(100%, -200%);
+}
+
+.threetel .tel_containerc {
+    transition: 0.5s;
+    transform: translate(23px, -200%);
+}
+
+
+
+
+
+
+.mini {
+    @media (min-width:320px) {
+        display: none;
+    }
+
+    // .mini_containera
+
+    &_containera {
+        max-width: 272px;
+        transform: translate(23px, -16px);
+    }
+
+    // .mini_containerb
+
+    &_containerb {
+        max-width: 272px;
+        transform: translate(150%, -210px);
+
+    }
+
+    // .mini_containerc
+
+    &_containerc {
+        max-width: 272px;
+        transform: translate(150%, -402px);
+
+    }
+}
+
+.mini-title {
+    font-size: 32px;
+}
+
+.mini-text {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 7px 0 20px 0;
+}
+
+.mobmini {
+    font-size: 14px;
+    color: #fff;
+    padding: 14px 33px;
+    background-color: #EF4D9C;
+    font-weight: 500;
+}
+
+.but {
+
+    // .but_mini
+
+    &_mini {
+        transform: translate(23px, -390px);
+    }
+}
+
+.buttmini {
+    padding: 20px 28px 20px 16px;
+}
+
+.activemini {
+    color: #fff;
+    background: url('./../../img/start/icon/tel.png') no-repeat;
+}
+
+
+.onemini .mini_containera {
+    transition: 0.5s;
+    transform: translate(23px, -16px);
+}
+
+.twomini .mini_containera {
+    transition: 0.5s;
+    transform: translate(-120%, -16px);
+}
+
+.threemini .mini_containera {
+    transition: 0.5s;
+    transform: translate(-120%, -16px);
+}
+
+
+.onemini .mini_containerb {
+    transition: 0.5s;
+    transform: translate(150%, -210px);
+}
+
+.twomini .mini_containerb {
+    transition: 0.5s;
+    transform: translate(23px, -210px);
+}
+
+.threemini .mini_containerb {
+    transition: 0.5s;
+    transform: translate(-150%, -210px);
+}
+
+
+.onemini .mini_containerc {
+    transition: 0.5s;
+    transform: translate(150%, -402px);
+}
+
+.twomini .mini_containerc {
+    transition: 0.5s;
+    transform: translate(150%, -402px);
+}
+
+.threemini .mini_containerc {
+    transition: 0.5s;
+    transform: translate(23px, -402px);
+}
