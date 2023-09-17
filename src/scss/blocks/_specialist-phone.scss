@@ -1,0 +1,163 @@
+.specialist-phone {
+	display: none;
+
+	@media (max-width: 375px) {
+		display: flex;
+		width: 100%;
+		gap: 32px;
+		flex-direction: column;
+		position: relative;
+		margin-bottom: 80px;
+	}
+}
+
+.specialist-phone__title {
+	@media (max-width: 375px) {
+		font-family: var(--font-main);
+		font-weight: 500;
+		font-size: 30px;
+		line-height: 32px;
+		text-transform: uppercase;
+		color: var(--text-color);
+		margin-left: 22px;
+	}
+}
+
+.slider--specialist.slick-initialized {
+
+	& .slick-prev-specialist {
+		@media (max-width: 375px) {
+			position: absolute;
+			display: block;
+			width: 24px;
+			height: 26px;
+			background: url('./../../img/slider/arrow-left.svg') no-repeat center center;
+			background-size: contain;
+			top: 4px;
+			right: 66px;
+		}
+	}
+
+	& .slick-next-specialist {
+
+		@media (max-width: 375px) {
+			position: absolute;
+			display: block;
+			width: 24px;
+			height: 26px;
+			background: url('./../../img/slider/arrow-right.svg') no-repeat center center;
+			background-size: contain;
+			top: 4px;
+			right: 26px;
+		}
+	}
+
+	& .specialist-phone__card {
+		@media (max-width: 375px) {
+			display: flex;
+			flex-direction: row;
+		}
+	}
+
+	& .specialist-phone__card-wrap {
+		@media (max-width: 375px) {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			padding: 48px 22px;
+		}
+
+		&--blue {
+			background: var(--color-blue);
+		}
+
+		&--green {
+			background: var(--color-green);
+		}
+
+		&--yellow {
+			background: var(--color-yellow);
+		}
+
+		&.inverse {
+			&.specialist-phone__card-wrap--blue {
+				background: var(--color-blue-inverse);
+			}
+
+			&.specialist-phone__card-wrap--green {
+				background: var(--color-green-inverse);
+			}
+
+			&.specialist-phone__card-wrap--yellow {
+				background: var(--color-yellow-inverse);
+			}
+
+			& .specialist-phone__card-btn {
+				color: var(--color-white);
+				background-color: var(--text-color);
+				border: 1px solid var(--text-color);
+				border-radius: 4px;
+			}
+		}
+	}
+
+	& .specialist-phone__card-date {
+		font-family: var(--font-main);
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 24px;
+		color: var(--text-color);
+
+		@media (max-width: 1440px) {
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 18px;
+		}
+	}
+
+	& .specialist-phone__card-title {
+		margin-top: 16px;
+		max-width: 604px;
+		font-family: var(--font-main);
+		font-weight: 500;
+		font-size: 32px;
+		line-height: 32px;
+		color: var(--text-color);
+
+		@media (max-width: 1440px) {
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 24px;
+			margin-top: 12px;
+		}
+
+		@media (max-width: 1024px) {
+			font-size: 22px;
+			line-height: 22px;
+		}
+	}
+
+	& .specialist-phone__card-btn {
+		display: inline-block;
+		box-sizing: content-box;
+		padding: 17px 41px;
+		cursor: pointer;
+		font-family: var(--font-main);
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 24px;
+		text-transform: uppercase;
+		color: var(--text-color);
+		border: 1px solid var(--text-color);
+		border-radius: 4px;
+		margin-top: 32px;
+
+		@media (max-width: 1440px) {
+			padding: 14px 33px;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 18px;
+			margin-top: 24px;
+		}
+	}
+}

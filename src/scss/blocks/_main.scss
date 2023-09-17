@@ -1,7 +1,3 @@
-.section {
-	margin-bottom: 136px;
-}
-
 .main {
 	display: flex;
 	justify-content: end;
@@ -9,6 +5,15 @@
 	max-height: 883px;
 	background: #F8F8F8;
 	border-bottom: 1px solid #E0E0E0;
+	margin-bottom: 136px;
+
+	@media (max-width: 1440px) {
+		margin-bottom: 100px;
+	}
+
+	@media (max-width: 768px) {
+		margin-bottom: 80px;
+	}
 }
 
 .main-content-wrapper {

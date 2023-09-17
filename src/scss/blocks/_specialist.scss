@@ -1,17 +1,11 @@
-.section {
-	margin-bottom: 136px;
-
-	@media (max-width: 1440px) {
-		margin-bottom: 100px;
-	}
-}
-
 .specialist {
 	display: flex;
 	gap: 36px;
 	width: 100%;
+	margin-bottom: 136px;
 
 	@media (max-width: 1440px) {
+		margin-bottom: 100px;
 		gap: 16px;
 	}
 
@@ -20,8 +14,7 @@
 	}
 
 	@media (max-width: 375px) {
-		gap: 32px;
-		flex-direction: column;
+		display: none;
 	}
 }
 

@@ -1,13 +1,10 @@
-.section {
-	margin-bottom: 136px;
-}
-
 .news {
 	display: flex;
 	flex-direction: column;
 	gap: 36px;
 	width: 100%;
 	position: relative;
+	margin-bottom: 136px;
 
 	@media (max-width: 1024px) {
 		gap: 32px;
