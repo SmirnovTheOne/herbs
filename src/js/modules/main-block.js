@@ -29,6 +29,20 @@ function start() {
 
 	document.addEventListener('DOMContentLoaded', () => {
 
+		let myBtns = document.querySelectorAll('.btn');
+		myBtns.forEach(function (btn) {
+
+			btn.addEventListener('click', () => {
+				myBtns.forEach(b => b.classList.remove('actives'));
+				btn.classList.add('actives');
+			});
+
+		});
+
+	});
+
+	document.addEventListener('DOMContentLoaded', () => {
+
 		let myBtns = document.querySelectorAll('.buttsplan');
 		myBtns.forEach(function (btn) {
 

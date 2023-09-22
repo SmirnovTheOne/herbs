@@ -29,3 +29,15 @@
 		padding-right: var(--container-padding);
 	}
 }
+
+.section {
+	margin-bottom: 136px;
+
+	@media (max-width: 1440px) {
+		margin-bottom: 100px;
+	}
+
+	@media (max-width: 768px) {
+		margin-bottom: 80px;
+	}
+}

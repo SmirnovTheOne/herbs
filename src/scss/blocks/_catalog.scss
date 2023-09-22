@@ -1,17 +1,13 @@
 .catalog {
 	display: flex;
-	margin: 0 auto;
 	gap: 36px;
 	width: 100%;
-	margin-bottom: 136px;
 
 	@media (max-width: 1440px) {
-		margin-bottom: 100px;
 		gap: 16px;
 	}
 
 	@media (max-width: 768px) {
-		margin-bottom: 80px;
 		flex-direction: column;
 	}
 }
